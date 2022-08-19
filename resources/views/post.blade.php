@@ -1,0 +1,11 @@
+{{-- @dd($post) --}}
+@extends("layouts.Main")
+
+@section("container")
+<article>
+    <h2>{{ $post["judul"] }}</h2>
+    <h5>{{ $post["author"] }}</h5>
+    <p>{{ $post["body"] }}</p>
+</article>
+<a href="/posts">Back To Posts</a>
+@endsection
